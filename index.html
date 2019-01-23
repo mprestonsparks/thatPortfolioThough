@@ -9,7 +9,8 @@
 <!DOCTYPE html>
 
 <style>
-
+    
+    
 .navBar {
     border: 2px solid green;
     height: 50px;
@@ -18,7 +19,6 @@
     width: 80%;
     margin: 2% 0 0 10%;
 }
-
 #name {
     float: left;
     padding: 0 0 0 3%;
@@ -27,8 +27,8 @@
     line-height: 50px;
     background-color: green;
     font-size: 25px;
+    overflow: hidden;
 }
-
 #aboutLink {
     float: right;
     width: 10%;
@@ -38,7 +38,6 @@
     text-align: center;
     vertical-align: middle;
 }
-
 #portfolioLink {
     float: right;
     width: 10%;
@@ -48,7 +47,6 @@
     text-align: center;
     vertical-align: middle;
 }
-
 #contactLink {
     float: right;
     width: 10%;
@@ -58,48 +56,62 @@
     text-align: center;
     vertical-align: middle;
 }
-
 #contentSection {
     background-color: grey;
     min-height: 100%;
-    width: 80%;
+    width: 74%;
     margin: 2% 10% 0 10%;
-    /* alignment: center; This doesnt work */
+    padding: 0 3% 2% 3%;
+    position: relative;
 }
 
-#footerBorder {
+#contentSection.h1 {
+    margin: 2% 0 0 10%;
+}
+
+#placeholderImage {
+    /* position: absolute; */
+    float: left;
+    /* border: 1px solid green; */
+    margin: 0 20px 0 0;
+}
+
+
+footer {
     background-color: blue;
     height: 60px;
     position: absolute;
     bottom: 0px;
-    width: 100%;
+    right: 0px;
+    left: 0px;
+    /* width: 100%; */
     
 }
-
-footer {
-    background-color: yellow;
-    height: 50px;
-    position: absolute;
-    bottom: 0px;
-    width: 95%;
-    text-align: center;
-}
-
 </style>
 
 
 <html>     
      
-<div class="navBar">
-    <div id="name">Preston Sparks</div>
-    <div id="aboutLink">About</div>
-    <div id="portfolioLink">Portfolio</div>
-    <div id="contactLink">Contact</div>
+<div class="navBar"> 
+        <div id="name">
+            Preston Sparks
+        </div>
+        <div id="aboutLink">About</div>
+        <div id="portfolioLink">Portfolio</div>
+        <div id="contactLink">Contact</div>
 </div>
 
 
 <div id=contentSection>
-    <p>
+
+    <h1>
+        About Me
+    </h1>
+    <hr>
+
+    <img id="placeholderImage" src="https://place-hold.it/200"></img>
+    
+    
         Lorem ipsum dolor sizzle amet, consectetizzle adipiscing fo shizzle 
         my nizzle. Doggy sapizzle velit, uhuh ... yih! stuff, pimpin' quis, 
         sizzle, pimpin'. Pellentesque dang tortizzle. Sheezy eros. Shizzle 
@@ -109,9 +121,9 @@ footer {
         shut the shizzle up habitasse platea dictumst. Shiznit dapibizzle. 
         Curabitur tellus urna, pretizzle eu, mattizzle ac, eleifend shit, 
         nunc. Owned suscipizzle. Brizzle semper sure sed fo shizzle.
-    </p>
+        
+        <br><br>
 
-    <p>
         Sizzle vitae tortor izzle sheezy for sure consequizzle. Cool 
         convallizzle, arcu izzle i saw beyonces tizzles and my pizzle went 
         crizzle daahng dawg, nulla lorem luctus pede, izzle blandizzle augue 
@@ -127,14 +139,16 @@ footer {
         uhuh ... yih!, ornare we gonna chung, imperdiet pot, lacus. Vivamizzle 
         eget i'm in the shizzle izzle funky fresh adipiscing dawg. Curabitizzle 
         shizzlin dizzle fizzle fo ornare nonummy.
-    </p>
+
+        <br><br>
+        
 </div>
 
-<div id="footerBorder">
+
 <footer>
     text
 </footer>
-</div>
+
 
    
 
