@@ -15,6 +15,7 @@ html {
     right: 0;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .navChild {
@@ -68,7 +69,7 @@ li {
     list-style: none;
 }
 
-#contentSection {
+.contentSection {
     background-color: rgba(0, 0, 0, 0.75);
     /* opacity: 100%; */
     position: relative;
@@ -148,4 +149,8 @@ footer {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+#portfolioSection img {
+    border: 10px solid #e5e5e5;
 }
