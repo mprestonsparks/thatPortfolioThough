@@ -1,0 +1,67 @@
+
+.navBar {
+    border: 2px solid green;
+    height: 50px;
+    position: relative;
+    background-color: yellow;
+    width: 960px;
+    margin: 2% 0 0 10%;
+    margin: 0 auto;
+}
+
+#name {
+    float: left;
+    padding: 0 0 0 3%;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    background-color: green;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.navBarLinks {
+    float: right;
+    width: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#centerLink {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-color: grey;
+}
+
+li {
+    list-style: none;
+}
+#contentSection {
+    background-color: grey;
+    min-height: 100%;
+    width: 900px;
+    padding: 0 30px 20px 30px;
+    margin: 0 auto;
+}
+
+#contentSection.h1 {
+    margin: 2% 0 0 10%;
+}
+
+#placeholderImage {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+footer {
+    background-color: blue;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    /* vertical-align: text-bottom; */
+    border-top: 5px solid black;  
+}
