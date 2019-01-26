@@ -39,7 +39,7 @@ html {
     /* background-color: rgba(255, 207, 64, 1); */
     background-color: rgba(0, 0, 0, 0);
     opacity: 80%;
-    color: #ffcf40;
+    color: #E9D863;
     font-size: 30px;
     overflow: hidden;
     font-weight: bold;
@@ -58,6 +58,13 @@ html {
     font-size: 110%;
     color: khaki;
 }
+
+a:link, a:visited, a:hover, a:active {
+    color: khaki;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+    text-decoration: none;
+  }
 
 #centerLink {
     border-right: 1px solid black;
@@ -79,7 +86,7 @@ li {
     padding: 0 30px 20px 30px;
     margin: 5% auto;
     margin-bottom: 5%;
-    border: 1px solid darkgrey;
+    border: 1.5px solid darkgrey;
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1px;
@@ -153,4 +160,40 @@ footer {
 
 #portfolioSection img {
     border: 10px solid #e5e5e5;
+}
+
+/* ---------- CONTACT PAGE ----------- */
+
+
+label {
+    color: khaki;
+}
+
+#email {
+    height: 17px;
+    width: 50%;
+    border-radius: 3px;
+    margin: 1px 0 0 0;
+}
+
+#fname {
+    height: 17px;
+    width: 50%;
+    border-radius: 3px;
+    margin: 1px 0 0 0;
+}
+
+#message {
+    height: 120px;
+    width: 50%;
+    border-radius: 3px;
+    margin: 1px 0 0 0;
+}
+
+#submitButton {
+    height: 40px;
+    width: 140px;
+    border-radius: 3px;
+
+    text-align: center;
 }
