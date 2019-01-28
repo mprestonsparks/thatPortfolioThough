@@ -72,15 +72,21 @@ li {
     list-style: none;
 }
 
+.contentSectionWrapper {
+    display: flex;
+    padding: 0 1em;
+}
+
 .contentSection {
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     min-height: 100%;
-    max-width: 897px;
-    width: 100%;
+    max-width: calc(100%-1em);
+    width: 897px;
     padding: 0 30px 20px 30px;
+    margin-top: calc(50px + 5%);
     margin: 5% auto;
-    margin-bottom: 5%;
+    margin-bottom: calc(40px + 5%);
     border: 1.5px solid darkgrey;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -109,7 +115,7 @@ hr {
 
 #placeholderImage {
     float: left;
-    margin: 0 20px 0 0;
+    margin: 0 20px 10px 0;
     box-shadow: 5px 5px 5px #000000;
 }
 
