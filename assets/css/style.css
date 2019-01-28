@@ -16,11 +16,11 @@ html {
     width: 100%;
     position: fixed;
     z-index: 1;
+    max-height: 74.59px;
 }
 
 .navChild {
     height: 50px;
-    /* position: relative; */
     background-color: rgba(0, 0, 0, 0);
     width: 960px;
     margin: 2% 0 0 10%;
@@ -36,14 +36,13 @@ html {
     width: 60%;
     height: 50px;
     line-height: 50px;
-    /* background-color: rgba(255, 207, 64, 1); */
     background-color: rgba(0, 0, 0, 0);
     opacity: 80%;
     color: #E9D863;
     font-size: 30px;
     overflow: hidden;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
 }
 
 .navBarLinks {
@@ -51,17 +50,14 @@ html {
     width: 10%;
     text-align: center;
     margin: 0 0 .5% 0;
-    /* vertical-align: middle; */
-    /* height: 50px;
-    line-height: 50px; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 110%;
     color: khaki;
 }
 
 a:link, a:visited, a:hover, a:active {
     color: khaki;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 110%;
     text-decoration: none;
   }
@@ -78,17 +74,16 @@ li {
 
 .contentSection {
     background-color: rgba(0, 0, 0, 0.75);
-    /* opacity: 100%; */
     position: relative;
     min-height: 100%;
-    max-width: 900px;
+    max-width: 897px;
     width: 100%;
     padding: 0 30px 20px 30px;
     margin: 5% auto;
     margin-bottom: 5%;
     border: 1.5px solid darkgrey;
     color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     text-align: justify;
     text-justify: inter-word;
@@ -100,6 +95,7 @@ h1 {
     color: #f6f6f6;
     text-shadow: -1px -1px 0 #000000;
     font-size: 200%;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
 }
 
 hr {
@@ -129,6 +125,7 @@ footer {
     text-align: center;
     border-top: 5px solid khaki;
     color: #dddddd;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
 }
 
 /* ---------- PORTFOLIO PAGE ----------- */
@@ -146,7 +143,6 @@ footer {
 }
 
 .column img {
-    /* margin: 8px 4px 4px 8px; */
     margin-top: 10%;
     vertical-align: middle;
 }
@@ -188,6 +184,11 @@ label {
     width: 50%;
     border-radius: 3px;
     margin: 1px 0 0 0;
+    padding-bottom: 5%;
+}
+
+#message::placeholder {
+    margin-right: 50%;
 }
 
 #submitButton {
@@ -197,3 +198,73 @@ label {
 
     text-align: center;
 }
+
+/* ---------- FOR SMALLER SCREENS ----------  */
+
+@media only screen and (min-width: 960px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) { 
+     #name {
+        display: none;
+    }
+    
+    .navBarLinks {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin-top: 0px;
+        margin-left: 1%;
+        width: 100%;
+        height: 100%;
+    }
+    .dropbtn {
+        background-color: rgb(0,0,0, 80%);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+    }
+    
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        background-color: black;
+        color: #f6f6f6;
+        font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgb(64,64,64,.8);
+        color: khaki;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        color: khaki;
+    }
+  }
