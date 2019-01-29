@@ -102,6 +102,7 @@ h1 {
     text-shadow: -1px -1px 0 #000000;
     font-size: 200%;
     font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 hr {
@@ -153,17 +154,51 @@ footer {
     vertical-align: middle;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+
+/* #col1img1 - col2img2 used to place text labels over images */
+#col1img1 {
+    position: relative;
+    align-content: center;
+}
+
+#col1img2 {
+    position: relative;
+    align-content: center;
+}
+
+#col2img1 {
+    position: relative;
+    align-content: center;
+}
+
+#col2img2 {
+    position: relative;
+    align-content: center;
 }
 
 #portfolioSection img {
     border: 10px solid #e5e5e5;
 }
 
+.portfolioImage h2 {
+    position: absolute;  
+    left: calc(50% + 10px);
+    top: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    min-width: 100%;
+    color: #E9D863;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 /* ---------- CONTACT PAGE ----------- */
 
 
