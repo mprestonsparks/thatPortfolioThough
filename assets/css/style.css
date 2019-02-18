@@ -72,10 +72,10 @@ li {
     list-style: none;
 }
 
-.contentSectionWrapper {
+/* .contentSectionWrapper {
     display: flex;
     padding: 0 1em;
-}
+} */
 
 .contentSection {
     background-color: rgba(0, 0, 0, 0.75);
@@ -120,6 +120,9 @@ hr {
     box-shadow: 5px 5px 5px #000000;
 }
 
+h3 {
+    text-decoration: underline;
+}
 footer {
     background-color: rgba(0, 0, 0, .8);
     margin-top: 5%;
